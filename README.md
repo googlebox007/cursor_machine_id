@@ -9,7 +9,7 @@
 - 支持自定义设备 ID
 - 无需额外依赖，使用系统内置工具
 
-## 使用方法
+## Mac系统使用方法
 
 1. 下载 `change_id.sh` 脚本
 2. 给脚本添加执行权限：
@@ -26,14 +26,31 @@ chmod +x change_id.sh
 或者使用自定义设备 ID
 ./change_id.sh your_custom_id
 ```
+## Windows10系统使用方法
 
+1. 下载 `update_cursor_id.ps1` 脚本
+2. 给脚本添加执行权限：
+
+```powershell
+update_cursor_id.ps1
+```
+
+3. 运行脚本：
+
+```bash
+使用随机生成的设备 ID
+./update_cursor_id.ps1
+或者使用自定义设备 ID
+./update_cursor_id.ps1 your_custom_id
+```
 
 ## 注意事项
 
 - 脚本会在修改前自动创建配置文件的备份
 - 备份文件保存在原配置文件相同目录下，格式为 `storage.json.backup_时间戳`
 - 请确保在运行脚本前关闭 Cursor 编辑器
-- 仅支持 macOS 系统
+- 支持 macOS 系统
+- 支持 Windows10系统
 
 ## 配置文件位置
 
